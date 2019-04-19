@@ -30,42 +30,4 @@
 
 }
 
-@keyframe skew-horizontal {
-    0%{
-        transform: skewX(20deg);
-        opacity: 100;
-    }
-
-    100%{
-        transform: skewX(-20deg);
-        opacity: 50;
-    }
-}
-
-@keyframe skew-vertical {
-    0%{
-        transform: skewY(20deg);
-    }
-
-    100%{
-        transform: skewY(-20deg);
-    }
-}
-
-.skew-20{
-    transform: skewX(20deg);
-
-}
-
-.skew-x-neg-20{
-    /* transform: skewX(-20deg); */
-    animation: skew-horizontal 3s infinite;
-    animation-direction: alternate;
-}
-
-.skew-neg-50{
-    /* transform: skewX(-50deg); */
-
-    animation: skew-vertical 3s infinite;
-}
 
