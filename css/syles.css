@@ -4,7 +4,7 @@
     background-color: blueviolet;
 
     /* increases the width 10 times, height 2 times */
-    transform: scale(10,2);
+    /* transform: scale(10,2); */
     
     /* decreases the width in half, height in quarter */
     /* transform: scale(.05, 0.25); */
@@ -16,5 +16,56 @@
     /* flips the y-axis */
     /* transform: scale(1,-5);
     transform: scaleY (-5;) */
+
+    float: right;
+}
+
+.box{
+    background-color: indigo;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 20px;
+    /* transform: skew(); */
+
+}
+
+@keyframe skew-horizontal {
+    0%{
+        transform: skewX(20deg);
+        opacity: 100;
+    }
+
+    100%{
+        transform: skewX(-20deg);
+        opacity: 50;
+    }
+}
+
+@keyframe skew-vertical {
+    0%{
+        transform: skewY(20deg);
+    }
+
+    100%{
+        transform: skewY(-20deg);
+    }
+}
+
+.skew-20{
+    transform: skewX(20deg);
+
+}
+
+.skew-x-neg-20{
+    /* transform: skewX(-20deg); */
+    animation: skew-horizontal 3s infinite;
+    animation-direction: alternate;
+}
+
+.skew-neg-50{
+    /* transform: skewX(-50deg); */
+
+    animation: skew-vertical 3s infinite;
 }
 
